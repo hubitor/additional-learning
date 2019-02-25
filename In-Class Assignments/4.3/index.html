@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Maximum Number Function</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script> -->
+</head>
+<body>
+    <script>
+    // declare variables
+    var firstArray = [2, 6, 8, 89, -45, 0, 300];
+    var secondArray = [1999, 3121, 777, 9311, 17, 319, 200];
+    var thirdArray = [9, .09, 99, 999, -999999, 99999];
+
+    // declare array with a function PREFERRED WAY IN CLASS
+    var findMaxNum = function (getArray) {
+        // get first number to compare
+        var maxNum = getArray[0];
+
+        // for loop to go through array starting with second index
+        for (i=0; i<getArray.length; i++) {
+
+            // compare the second number with the previous one
+            // if true assign current number to maxNum
+            if (maxNum < getArray[i]) {
+                maxNum = getArray[i];
+            }
+
+        };
+        return maxNum;
+    }
+
+    // MY VERSION WORKS TOO
+    // var findMaxNum = function (getArray) {
+    //     // get first number to compare
+    //     var maxNum = getArray[0];
+
+    //     // for loop to go through array starting with second index
+    //     for (i=1; i<getArray.length; i++) {
+
+    //         // compare the second number with the previous one
+    //         // if true assign current number to maxNum
+    //         if (getArray[i] > maxNum) {
+    //             maxNum = getArray[i];
+    //         }
+
+    //     };
+    //     return maxNum;
+    // }
+    
+    console.log(findMaxNum(firstArray));
+    console.log(findMaxNum(secondArray));
+    console.log(findMaxNum(thirdArray));
+
+
+    </script>
+</body>
+</html>

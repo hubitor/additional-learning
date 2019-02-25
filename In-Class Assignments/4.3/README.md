@@ -1,0 +1,1 @@
+Create a function that takes in an array of numbers and outputs the maximum number.
