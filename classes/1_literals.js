@@ -1,3 +1,5 @@
+// Object Literals
+
 // const s1 = 'Hello';
 // console.log(typeof s1);
 
