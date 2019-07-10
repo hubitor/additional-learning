@@ -36,5 +36,6 @@ book1.getSummary();
 book1.getAge();
 console.log(book1.getAge());
 
+// Call Static method from Class object, not instance
 console.log(Book.topBookStore());
 
